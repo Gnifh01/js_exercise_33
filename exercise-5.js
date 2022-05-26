@@ -1,9 +1,6 @@
 function firstUncompletedNote(notes) {
   const uncompletedNotes = [];
   uncompletedNotes.push(notes.find(item => item.todos.find(todo => todo.done === false)));
-  if(uncompletedNotes !== 'undefined' && uncompletedNotes.length === 0) {
-    return "All notes are completed";
-  }
   return uncompletedNotes;
 }
 
